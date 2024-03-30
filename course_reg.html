@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Course Registration System - Course Registration</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        /* Add custom CSS styles here */
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+            <a class="navbar-brand" href="#">Course Registration System</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="registration.html">Registration</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="login.html">Login</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="course_info.html">Course Info</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="course_reg.html">Course Registration</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container mt-5">
+        <h1>Course Registration</h1>
+        <form id="courseRegistrationForm">
+            <div class="form-row">
+                <div class="form-group col-md-4">
+                    <label for="firstName">First Name</label>
+                    <input type="text" class="form-control" id="firstName" required>
+                </div>
+                <div class="form-group col-md-4">
+                    <label for="middleName">Middle Name</label>
+                    <input type="text" class="form-control" id="middleName">
+                </div>
+                <div class="form-group col-md-4">
+                    <label for="lastName">Last Name</label>
+                    <input type="text" class="form-control" id="lastName" required>
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="form-group col-md-4">
+                    <label for="month">Month</label>
+                    <select class="form-control" id="month" required>
+                        <option value="">Select Month</option>
+                        <!-- Add months as options here -->
+                        <option value="January">January</option>
+                        <option value="February">February</option>
+                        <option value="March">March</option>
+                        <!-- Add remaining months -->
+                    </select>
+                </div>
+                <div class="form-group col-md-4">
+                    <label for="day">Day</label>
+                    <select class="form-control" id="day" required>
+                        <option value="">Select Day</option>
+                        <!-- Add days as options here -->
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <!-- Add remaining days -->
+                    </select>
+                </div>
+                <div class="form-group col-md-4">
+                    <label for="year">Year</label>
+                    <select class="form-control" id="year" required>
+                        <option value="">Select Year</option>
+                        <!-- Add years as options here -->
+                        <option value="2022">2022</option>
+                        <option value="2023">2023</option>
+                        <option value="2024">2024</option>
+                        <!-- Add remaining years -->
+                    </select>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="address">Address</label>
+                <input type="text" class="form-control" id="address" required>
+            </div>
+            <div class="form-group">
+                <label for="addressLine2">Street Address Line 02</label>
+                <input type="text" class="form-control" id="addressLine2">
+            </div>
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <label for="state">State/Province</label>
+                    <input type="text" class="form-control" id="state" required>
+                </div>
+                <div class="form-group col-md-6">
+                    <label for="zip">Postal/Zip Code</label>
+                    <input type="text" class="form-control" id="zip" required>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="email">Email Address</label>
+                <input type="email" class="form-control" id="email" required>
+            </div>
+            <div class="form-group">
+                <label for="mobile">Mobile Number</label>
+                <input type="tel" class="form-control" id="mobile" required>
+            </div>
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <label for="eduLevel">Educational Level</label>
+                    <select class="form-control" id="eduLevel" required>
+                        <option value="">Select Educational Level</option>
+                        <!-- Add educational levels as options here -->
+                        <option value="High School">High School</option>
+                        <option value="Bachelor's Degree">Bachelor's Degree</option>
+                        <option value="Master's Degree">Master's Degree</option>
+                        <!-- Add remaining educational levels -->
+                    </select>
+                </div>
+                <div class="form-group col-md-6">
+                    <label for="courses">Courses</label>
+                    <select class="form-control" id="courses" required>
+                        <option value="">Select Course</option>
+                        <!-- Add courses as options here -->
+                        <option value="Introduction to Computer Science">Introduction to Computer Science</option>
+                        <option value="Web Development Fundamentals">Web Development Fundamentals</option>
+                        <option value="Data Science for Beginners">Data Science for Beginners</option>
+                        <!-- Add remaining courses -->
+                    </select>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="additionalComment">Additional Comment</label>
+                <textarea class="form-control" id="additionalComment" rows="3"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+    </div>
+
+    <script src="course_reg.js" defer></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
